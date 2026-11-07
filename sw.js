@@ -1,5 +1,5 @@
 // 心臓断面アトラス — offline cache
-const CACHE = 'heart-atlas-v4';
+const CACHE = 'heart-atlas-v5';
 const FILES = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png', './apple-touch-icon.png'];
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(FILES)).then(() => self.skipWaiting()));
